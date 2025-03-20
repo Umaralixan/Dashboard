@@ -1,0 +1,42 @@
+.sidebar{
+    width: 255px;
+    height: 100vh;
+    background: $bg-primary;
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    color: #fff;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    &__avatar{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+
+    }
+    &__collection{
+        margin: 40px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        flex: 1;
+    }
+    &__link{
+        display: block;
+        padding: 10px;
+        border-radius: $radius;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: .2s ease;
+        &.active,
+        &:hover{
+            background: #fff;
+            color: $bg-primary;
+        }
+
+    }
+
+}
